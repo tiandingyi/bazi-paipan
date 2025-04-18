@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# Author: 钉钉或微信pythontesting 钉钉群21734177
-# CreateDate: 2019-2-21
 
 import argparse
 import collections
@@ -12,7 +10,6 @@ from bidict import bidict
 
 from datas import *
 from ganzhi import *
-from sizi import summarys
 
 def check_gan(gan, gans):
     result = ''
