@@ -2,19 +2,15 @@
 
 - bazi.py 八字排盘，能比常用的排盘更清晰地显示冲、合、刑等关系，计算五行分数，附加《三命通会》等命理评判
 - luohou.py 计算罗喉日时,用于提示风水师何时慎用罗盘。
-- shengxiao.py 用户生肖合婚等。
 
-# 安装
-- 安裝依赖库
-
-```python
-pip install bidict lunar_python colorama
-```
-
-- linux打开终端或windows打开cmd或git的bash或powercmd等工具
-
-进入到代码所在目录。
-
+# venv
+- python3 -m venv venv
+- source venv//bin/activate
+- touch requirements.txt
+- pip install -r requirements.txt
+## 添加新依赖后执行
+- pip freeze > requirements.txt
+- deactivate
 
 # 使用
 
