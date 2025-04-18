@@ -12,6 +12,7 @@ from colorama import init
 from datas import *
 from common import *
 from yue import months
+from shenshatools import *
 
 def get_gen(gan, zhis):
     zhus = []
@@ -246,3 +247,23 @@ print("-"*120)
 all_ges = []
 
 # 神煞计算
+
+# 年,月，日，时柱神煞列表
+shenshas_nian = []
+shenshas_yue = []
+shenshas_ri = []
+shenshas_shi = []
+
+shenshas_nian = get_shensha(zhus, zhus[0])
+print(shenshas_nian)
+shenshas_yue = get_shensha(zhus, zhus[1])
+print(shenshas_yue)
+shenshas_ri = get_shensha(zhus, zhus[2])
+print(shenshas_ri)
+shenshas_shi = get_shensha(zhus, zhus[3])
+print(shenshas_shi)
+
+
+
+
+
