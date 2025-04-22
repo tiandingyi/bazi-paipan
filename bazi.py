@@ -255,15 +255,19 @@ shenshas_ri = []
 shenshas_shi = []
 
 shenshas_nian = get_shensha(zhus, zhus[0])
-print(shenshas_nian)
+print(f"生年神煞：{shenshas_nian}")
 shenshas_yue = get_shensha(zhus, zhus[1])
-print(shenshas_yue)
+print(f"生月神煞：{shenshas_yue}")
 shenshas_ri = get_shensha(zhus, zhus[2])
-print(shenshas_ri)
+print(f"生日神煞：{shenshas_ri}")
 shenshas_shi = get_shensha(zhus, zhus[3])
-print(shenshas_shi)
+print(f"生时神煞：{shenshas_shi}")
 
-
-
+dayuns_turple = [ (s[0], s[1]) for s in dayuns ]
+print(dayuns_turple)
+# 遍历大运列表，计算每个大运对应的神煞并打印
+for i, dayun in enumerate(dayuns_turple, start=1):
+    shensha_dayun = get_shensha(zhus, dayun)  # 调用get_shensha方法
+    print(f"第{i}步大运 {dayun} 的神煞：{shensha_dayun}")
 
 
