@@ -227,6 +227,26 @@ def get_shensha(sizhu, ganzhi):
         result.append("年自缢煞")
     if ganzhi[1] in ziyi_dict[day_gan_zhi[1]]:
         result.append("日自缢煞")
+
+    # 剑锋煞/岁驾
+    if ganzhi[1] in suijia_dict[year_gan_zhi[1]]:
+        result.append("年岁驾/剑锋煞")
     
+    # 天空/青龙
+    if ganzhi[1] in tiankong_dict[year_gan_zhi[1]]:
+        result.append("年天空/青龙")
+
+    # 天厄
+    if ganzhi[1] in tiane_dict[year_gan_zhi[1]]:
+        result.append("年天厄")
+    
+    # 勾煞：命前三辰（向前数3位）
+    if ganzhi[1] in gou_dict[year_gan_zhi[1]]:
+        result.append("年勾煞")
+
+    # 绞煞：命后三辰（向后数3位）
+    if ganzhi[1] in jiao_dict[year_gan_zhi[1]]:
+        result.append("年绞煞")
+
 
     return result
