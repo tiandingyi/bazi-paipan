@@ -233,6 +233,8 @@ if not options.b:
     print("\t公历:", end=' ')
     print("{}年{}月{}日".format(solar.getYear(), solar.getMonth(), solar.getDay()), end=' ')
     yun = ba.getYun(not options.n)   
+    shengong = ba.getShenGong()
+    print(shengong)
     print("  农历:", end=' ')
     print("{}年{}月{}日 穿=害 上运时间：{} 命宫:{} 胎元:{}\n".format(lunar.getYear(), lunar.getMonth(), 
         lunar.getDay(), yun.getStartSolar().toFullString().split()[0], ba.getMingGong(), ba.getTaiYuan()), end=' ')
