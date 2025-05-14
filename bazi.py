@@ -10,7 +10,6 @@ from lunar_python import Lunar, Solar
 from colorama import init
 
 from datas import *
-from common import *
 from shenshatools import *
 
 def get_gen(gan, zhis):
