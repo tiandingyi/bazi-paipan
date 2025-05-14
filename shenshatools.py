@@ -174,25 +174,21 @@ def get_shensha(sizhu, ganzhi):
     if ganzhi[1] in sangmen_dict[year_gan_zhi[1]]:
         result.append("年丧门")
 
-    # 吊客
+    # 吊客/天狗
     if ganzhi[1] in diaoke_dict[year_gan_zhi[1]]:
-        result.append("年吊客")
+        result.append("年吊客/天狗")
 
     # 大耗
     if ganzhi[1] in dahao_dict[year_gan_zhi[1]]:
         result.append("年大耗")
 
-    # 小耗
-    if ganzhi[1] in xiaohao_dict[year_gan_zhi[1]]:
-        result.append("年小耗")
-
     # 病符
     if ganzhi[1] in bingfu_dict[year_gan_zhi[1]]:
         result.append("年病符")
 
-    # 死符
+    # 死符/小耗
     if ganzhi[1] in sifu_dict[year_gan_zhi[1]]:
-        result.append("年死符")
+        result.append("年死符/小耗")
 
     # 官符
     if ganzhi[1] in guanfu_dict[year_gan_zhi[1]]:
@@ -247,6 +243,27 @@ def get_shensha(sizhu, ganzhi):
     # 绞煞：命后三辰（向后数3位）
     if ganzhi[1] in jiao_dict[year_gan_zhi[1]]:
         result.append("年绞煞")
+
+    # 白虎煞 岁前八辰，包括岁起数顺九辰
+    if ganzhi[1] in baihu_dict[year_gan_zhi[1]]:
+        result.append("年白虎")
+
+    # 天哭煞
+    if ganzhi[1] in tianku_dict[year_gan_zhi[1]]:
+        result.append("年天哭煞")
+
+    # 披头煞
+    if ganzhi[1] in pitou_dict[year_gan_zhi[1]]:
+        result.append("年披头煞")
+
+    # 飞符
+    if ganzhi[1] in feifu_dict[year_gan_zhi[1]]:
+        result.append("年飞符")
+
+    # 暴败
+    if ganzhi[1] in baobai_dict[year_gan_zhi[1]]:
+        result.append("年暴败")
+
 
 
     return result
